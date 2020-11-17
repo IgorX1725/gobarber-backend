@@ -70,6 +70,6 @@ describe('UpdateUserAvatar', () => {
       avatarFileName: 'avatar2.jpg',
     });
 
-    expect(deleteFile).toHaveBeenCalledWith('avatar.jpg');
+    await expect(deleteFile).toHaveBeenCalledWith('avatar.jpg');
   });
 });
