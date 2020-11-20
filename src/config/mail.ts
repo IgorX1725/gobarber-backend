@@ -12,7 +12,7 @@ export default {
 
   defaults: {
     from: {
-      email: 'igor@ibcortech.com.br',
+      email: 'igor@ibcortech.com',
       name: 'Igor da IBCortech',
     },
   },

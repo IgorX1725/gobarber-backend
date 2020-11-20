@@ -17,7 +17,7 @@ class S3StorageProvider implements IStorageProvider {
   public async saveFile(file: string): Promise<string> {
     const originalPath = path.resolve(uploadConfig.tempFolder, file);
     const ContentType = mime.getType(originalPath);
-    const fileContent = fs.promises.readFile(originalPath);
+    const fileContent = await fs.promises.readFile(originalPath);
 
     if (!ContentType) {
       throw new Error('File not found');
