@@ -40,6 +40,6 @@ jobs:
          host: ${{ secrets.SSH_HOST }}
          username: ${{ secrets.SSH_USER }}
          KEY: ${{ secrets.SSH_KEY }} 
-         port: ${{ SSH_PORT }}
+         port: ${{ secrets.SSH_PORT }}
          source: "dist"
          target: "test"
